@@ -474,7 +474,7 @@ class StartHelperCommand : public CommandScript
         static void TeleportPlayerToCity(Player* player)
         {
             uint32 mapId;
-            uint32 areaId;
+            //uint32 areaId;
             float x;
             float y;
             float z;
@@ -483,7 +483,7 @@ class StartHelperCommand : public CommandScript
             if (player->GetTeamId() == TEAM_ALLIANCE)
             {
                 mapId       = 0;
-                areaId      = 1519;
+                //areaId      = 1519;
                 x           = -8830.44;
                 y           = 626.666;
                 z           = 93.9829;
@@ -492,7 +492,7 @@ class StartHelperCommand : public CommandScript
             else
             {
                 mapId       = 1;
-                areaId      = 1519;
+                //areaId      = 1637;
                 x           = 1630.78;
                 y           = -4412.99;
                 z           = 16.5677;
@@ -502,7 +502,7 @@ class StartHelperCommand : public CommandScript
             const WorldLocation& location = WorldLocation(mapId, x, y, z, orientation);
 
             player->TeleportTo(mapId, x, y, z, orientation);
-            player->SetHomebind(location, areaId);
+            //player->SetHomebind(location, areaId);
         }
 };
 
