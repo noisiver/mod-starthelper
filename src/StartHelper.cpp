@@ -499,7 +499,7 @@ class StartHelperCommand : public CommandScript
                 orientation = 0.080535;
             }
 
-            const WorldLocation& location = WorldLocation(mapId, x, y, z, orientation);
+            //const WorldLocation& location = WorldLocation(mapId, x, y, z, orientation);
 
             player->TeleportTo(mapId, x, y, z, orientation);
             //player->SetHomebind(location, areaId);
